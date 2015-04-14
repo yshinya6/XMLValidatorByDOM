@@ -37,7 +37,7 @@ public class Main {
 		InputStream is;
 
 		try {
-			for (int i = 0; i < 10; i++) {
+			for (int i = 0; i < 21; i++) {
 				is = new FileInputStream(args[0]);
 				startTime = System.currentTimeMillis();
 				xmlReader.parse(new InputSource(is));
@@ -50,7 +50,6 @@ public class Main {
 			System.exit(0);
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("unexpected error: may be file problem");
 		} finally {
 		}
 		System.out.println("VALID XML FILE");
