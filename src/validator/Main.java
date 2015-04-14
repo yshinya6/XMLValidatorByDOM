@@ -25,7 +25,7 @@ public class Main {
 
 		Document doc;
 		try {
-			for (int i = 0; i < 21; i++) {
+			for (int i = 0; i < 10; i++) {
 				is = new FileInputStream(args[0]);
 				startTime = System.currentTimeMillis();
 				doc = builder.parse(is);
